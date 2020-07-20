@@ -6,10 +6,9 @@ import javax.persistence.*;
 public class Quote {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public Integer id;
 
-    @Column(name = "actor")
     public String actor;
 
     @Column(name = "detail")
