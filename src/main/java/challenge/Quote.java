@@ -2,8 +2,7 @@ package challenge;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "scripts")
+@Entity(name = "scripts")
 public class Quote {
 
     @Id
