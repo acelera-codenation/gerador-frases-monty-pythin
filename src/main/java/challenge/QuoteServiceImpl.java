@@ -2,7 +2,6 @@ package challenge;
 
 import org.springframework.stereotype.Service;
 
-
 @Service
 public class QuoteServiceImpl implements QuoteService {
 
