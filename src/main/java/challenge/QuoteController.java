@@ -10,8 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/v1/quote")
 public class QuoteController {
 
-    @Autowired
     private QuoteService service;
+
+    public QuoteController(QuoteService service) {
+        this.service = service;
+    }
 
     @GetMapping
     public Quote getQuote() {
